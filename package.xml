@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>encoder_joint_state_publisher</name>
+  <name>rosbot-wheel-comm</name>
   <version>0.0.1</version>
   <description>
     Converts wheel encoder ticks to sensor_msgs/JointState.
@@ -16,10 +16,12 @@
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
   <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
 
   <!-- Optional but recommended -->
-  <exec_depend>robot_state_publisher</exec_depend>
-  <exec_depend>joint_state_publisher</exec_depend>
+  <!-- <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend> -->
+  <exec_depend>ros2launch</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
