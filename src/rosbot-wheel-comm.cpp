@@ -17,9 +17,9 @@ public:
   : Node("diff_drive_controller")
   {
     // ---------------- PARAMETERS ----------------
-    this->declare_parameter<int>("pulses_per_revolution", 2048);
-    this->declare_parameter<double>("wheel_radius", 0.05);
-    this->declare_parameter<double>("wheel_separation", 0.30);
+    this->declare_parameter<int>("pulses_per_revolution", 200);
+    this->declare_parameter<double>("wheel_radius", 0.04);
+    this->declare_parameter<double>("wheel_separation", 0.17);
     this->declare_parameter<double>("kp", 1.5);
     this->declare_parameter<double>("control_rate", 50.0);
     this->declare_parameter<double>("max_wheel_speed", 10.0);
